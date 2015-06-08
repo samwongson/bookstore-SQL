@@ -1,0 +1,18 @@
+                     List of relations
+ Schema |         Name          |   Type   |     Owner      
+--------+-----------------------+----------+----------------
+ public | author_ids            | sequence | ixjysivbciyknz
+ public | authors               | table    | ixjysivbciyknz
+ public | book_ids              | sequence | ixjysivbciyknz
+ public | books                 | table    | ixjysivbciyknz
+ public | customers             | table    | ixjysivbciyknz
+ public | editions              | table    | ixjysivbciyknz
+ public | employees             | table    | ixjysivbciyknz
+ public | publishers            | table    | ixjysivbciyknz
+ public | shipments             | table    | ixjysivbciyknz
+ public | shipments_ship_id_seq | sequence | ixjysivbciyknz
+ public | stock                 | table    | ixjysivbciyknz
+ public | subject_ids           | sequence | ixjysivbciyknz
+ public | subjects              | table    | ixjysivbciyknz
+(13 rows)
+
