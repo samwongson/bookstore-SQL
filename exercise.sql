@@ -45,3 +45,16 @@ SELECT a.id, concat(a.first_name || ' ' || a.last_name), COUNT(b.author_id)
 FROM books AS b JOIN authors AS a ON (b.author_id=a.id)
 
 ORDER BY b.author_id DESC;
+-- ex12
+SELECT b.title
+FROM books AS b JOIN editions AS e ON (b.id=e.book_id)
+GROUP BY b.title
+HAVING COUNT(DISTINCT e.type) = 2;
+
+-- ex13
+SELECT DISTINCT p.name, ROUND(AVG(s.cost), 2) AS "average cost"
+FROM editions AS e JOIN publishers AS p ON (p.id=e.publisher_id)
+    JOIN stock AS s ON (s.isbn=e.isbn)
+GROUP BY p.name;
+
+      
